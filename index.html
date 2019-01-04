@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Giphy-Api Homework</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body id="wholeEnchilada">
+
+        <div class="jumbotron" id="header">
+            <h1>Sports Icons</h1>
+            <h4>Click the buttons to display GIPHY's of your favorite Sports Icons<br> Click the GIPHY's <br> Click the GIPHY's to play and pause<br> Search to add more buttons</h4>
+        </div>
+
+        <form class="form-inline" id="iconSearch">
+            <div class="form-group">
+                <label for="iconSearch>">Search for Sport Icon</label>
+                <input type="text" id="iconSearch">
+            </div>
+            <!-- Button triggers icons to be added -->
+            <input id="addIcon" type="submit" value="submit">
+        </form>
+        <div class="row">
+            <div class="container">
+                <div class="btn-group inline pull-left">
+                    <button class="btn btn-primary" id="icon" data-search="Tom Brady">Tom Brady</button>
+                    <button class="btn btn-primary" id="icon" data-search="Aaron Rodgers">Aaron Rodgers</button>
+                    <button class="btn btn-primary" id="icon" data-search="Labron James">Labron James</button>
+                    <button class="btn btn-primary" id="icon" data-search="Derek Jeter">Derek Jeter</button>
+
+                    <div id="myButtons"></div>
+                </div> <!--end of button group--> 
+            </div> <!--end of container-->
+        </div> <!--end of row-->
+
+        <div class="row">
+            <div class="container">
+                <span><div id="gifArea"></div></span>
+            </div> <!-- end of container-->
+        </div> <!-- end of row-->
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    </body>
+</html>
